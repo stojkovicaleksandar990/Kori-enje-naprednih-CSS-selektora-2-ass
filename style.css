@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #050210; 
+
+}
+
+.circle{
+    position: relative;
+    width: 60vh;
+    height: 60vh;
+    background:linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    border-radius: 50%;
+    animation: animate 0.5s linear infinite;
+}
+@keyframes animate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg)
+    }
+}
+
+.circle:after
+{
+    content: '';
+    position: absolute;
+    top: 30px;
+    right:30px;
+    bottom: 30px;
+    left: 30px;
+    border-radius: 50%;
+    background-color:#100635;
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1 {
+    from{
+        transform:scale(0, 0);
+}
+to{
+    transform:scale(1, 1);
+}
+}
+
+
+.circle span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background:linear-gradient(#fb5dad, #55fb9f, #b97aff);
+}
+.circle span:nth-child(1){
+    filter: blur(5px);
+}
+.circle span:nth-child(2){
+    filter: blur(10px);
+}
+.circle span:nth-child(3){
+    filter: blur(20px);
+}
+.circle span:nth-child(4){
+    filter: blur(40px);
+}
+
+
+.circle1{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    background:linear-gradient(#16070e, #061b10, #2b1644);
+}
+.circle1 span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background:linear-gradient(#fb5dad, #55fb9f, #b97aff);
+}
+.circle1 span:nth-child(1){
+    filter: blur(5px);
+}
+.circle1 span:nth-child(2){
+    filter: blur(10px);
+}
+.circle1 span:nth-child(3){
+    filter: blur(20px);
+}
+.circle1 span:nth-child(4){
+    filter: blur(40px);
+}
